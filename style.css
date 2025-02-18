@@ -20,9 +20,11 @@ body {
 
 #container #sidebar {
     position: sticky;
+    top: 0;
     padding: 0 16px;
     background-color: #fff;
-
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 #container #sidebar .profile-picture {
@@ -55,9 +57,7 @@ body {
     margin-right: 10px;
 }
 
-#sidebar .social-links {
-    margin: 15px 0;
-}
+
 
 #page-content .content-section {
     padding: 0 16px;
@@ -100,12 +100,16 @@ body {
 }
 
 #page-content .grid-layout .list-item {
-    padding: 8px 8px;
+    padding: 8px;
 }
 
 #page-content .grid-layout .image-item {
     width: 100%;
     display: block;
+}
+
+#page-content .grid-layout .image-item:hover {
+    opacity: 0.7;
 }
 
 .grid-layout .item-title {
@@ -125,8 +129,6 @@ body {
     font-size: 15px;
     display: inline-block;
     width: 100%;
-
-
 }
 
 .grid-layout .info-item {
@@ -184,21 +186,18 @@ body {
     border: 1px solid #f1f1f1
 }
 
-.content-about .about-title {
-    margin: 10px 0;
-}
-
-.content-about .about-description {
-    margin: 15px 0;
-}
-
+.content-about .about-title,
 .about-skills .text-skill {
     margin: 10px 0;
 }
 
-.about-skills .skill-name {
+.content-about .about-description,
+.about-skills .skill-name,
+.content-about .download-resume,
+#sidebar .social-links {
     margin: 15px 0;
 }
+
 
 .about-skills .status-skill {
     background-color: rgb(158, 158, 158);
@@ -223,9 +222,7 @@ body {
     padding: 8px 16px;
 }
 
-.content-about .download-resume {
-    margin: 15px 0;
-}
+
 
 .download-resume .resume-btn {
     margin: 16px 0;
@@ -234,6 +231,7 @@ body {
     color: #fff;
     border: none;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .download-resume .resume-btn:hover {
@@ -265,7 +263,7 @@ body {
 .charge .charge-type {
     padding: 32px 16px !important;
     color: #fff;
-
+    font-size: 24px;
 }
 
 .charge-color {
@@ -281,8 +279,6 @@ body {
 .charge li {
     padding: 16px;
     border: 1px solid #ccc;
-
-
 }
 
 .charge:hover .charge-color {
@@ -299,8 +295,6 @@ body {
     background-color: #fff !important;
     opacity: 0.5;
 }
-
-
 
 .color-center {
     background-color: #fff;
@@ -323,11 +317,131 @@ body {
 .btn-charge {
     background-color: rgb(241, 241, 241) !important;
     opacity: 0.9;
-
+    padding: 24px 16px !important;
 }
 
 .charge button:hover {
     background-color: #000;
     color: #fff;
+}
 
+.charge-money {
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.contact-section {
+    background-color: rgb(158, 158, 158);
+    padding: 12px 24px;
+}
+
+.pricing-title,
+.contact-title {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.contact-info {
+    display: flex;
+    text-align: center;
+    margin: 0 -16px;
+    padding: 24px 8px;
+}
+
+.contact-info .info-box {
+    width: 33.33333%;
+    background-color: rgb(97, 97, 97);
+}
+
+.info-box .box-icon {
+    margin: 15px 0;
+    font-size: 36px;
+    color: rgb(241, 241, 241);
+}
+
+.info-box .box-content {
+    margin: 15px 0;
+    color: #fff;
+}
+
+.color-blue-green {
+    background-color: rgb(0, 150, 136) !important;
+
+}
+
+
+
+.contact-form .form-input {
+    margin: 16px 0;
+}
+
+.form-input .input-text {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(204, 204, 204);
+
+
+}
+
+.send-btn {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.send-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.blog-post .post-image {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-section {
+    display: flex;
+    background-color: rgb(97, 97, 97);
+    padding: 32px 16px;
+}
+
+.section-box {
+    width: 33.33333%;
+    color: #fff;
+    padding: 0 8px;
+}
+
+.post {
+    list-style: none;
+}
+
+.text-description,
+.text-author {
+    margin: 15px 0;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.tags span {
+    background-color: #929292;
+    font-size: 12px;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.tags .color-tags {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 15px !important;
 }
