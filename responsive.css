@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     #container,
     #page-content .grid-layout,
@@ -11,6 +11,7 @@
 
     }
 
+
     #page-content {
         margin-top: 100px;
     }
@@ -21,8 +22,12 @@
         width: 100%;
     }
 
+    .active {
+        display: block !important;
+    }
+
     #overlay {
-        position: fixed;
+        position: fixed !important;
         top: 0;
         left: 0;
         right: 0;
