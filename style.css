@@ -18,6 +18,15 @@ body {
     margin: 0 auto;
 }
 
+.close-btn {
+    display: none;
+}
+
+#header,
+#overlay {
+    display: none;
+}
+
 #container #sidebar {
     position: sticky;
     top: 0;
@@ -58,6 +67,9 @@ body {
 }
 
 
+#page-content {
+    z-index: 1 !important;
+}
 
 #page-content .content-section {
     padding: 0 16px;
@@ -79,6 +91,13 @@ body {
     padding: 8px 16px;
     border: none;
     background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.filter-container .filter-button:hover {
+    background-color: #ccc;
     color: #000;
 }
 
@@ -175,6 +194,7 @@ body {
 
 .images-of-me .image-me {
     width: 100%;
+    display: block;
 }
 
 #page-content .content-about {
@@ -401,8 +421,9 @@ body {
 }
 
 .blog-post .post-image {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
 }
 
 .footer-section {
@@ -421,9 +442,35 @@ body {
     list-style: none;
 }
 
+.post li {
+    display: flex;
+
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.post li:hover {
+    background-color: #ccc;
+}
+
+.post p {
+    font-size: 15px;
+}
+
+.post p span {
+    margin: 4px 0;
+    display: inline-block;
+}
+
 .text-description,
 .text-author {
     margin: 15px 0;
+    font-size: 15px;
+    line-height: 22.5px;
 }
 
 .footer-title {
@@ -438,10 +485,22 @@ body {
     padding: 0 8px;
     margin-bottom: 16px;
     display: inline-block;
+
 }
 
 .tags .color-tags {
     background-color: #000 !important;
     color: #fff !important;
     font-size: 15px !important;
+}
+
+.author {
+    background-color: #000;
+    text-align: center;
+}
+
+.author p {
+    font-size: 15px;
+    padding: 24px;
+    color: #fff;
 }

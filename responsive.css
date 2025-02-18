@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+
+    #container,
+    #page-content .grid-layout,
+    #page-content .images-of-me,
+    .pricing-table,
+    .contact-info,
+    .footer-section,
+    #header {
+        display: block !important;
+
+    }
+
+    #page-content {
+        margin-top: 100px;
+    }
+
+    #header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+
+    #header .bar-btn {
+        font-size: 32px;
+        display: inline-block;
+        padding: 16px;
+        cursor: pointer;
+    }
+
+    #header .bar-btn:hover {
+        background-color: #333;
+        color: #fff;
+    }
+
+    #header .user-image {
+        float: right;
+        padding: 16px;
+    }
+
+    #header .avatar {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+
+    .close-btn {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 16px;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        background-color: #333;
+        color: #fff;
+    }
+
+    #sidebar {
+        display: none;
+        position: fixed !important;
+        min-width: 50%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000 !important;
+
+    }
+
+    #header {
+        position: absolute;
+    }
+
+
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .pricing-table .charge,
+    .info-box,
+    .section-box {
+        width: 100% !important;
+    }
+
+    .info-box {
+        overflow: hidden !important;
+
+    }
+}

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -13,6 +14,15 @@
 
 <body>
     <div id="container">
+        <div id="overlay"></div>
+        <div id="header">
+            <div class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="user-image">
+                <img src="./images/avatar_g (2).jpg" alt="" class="avatar">
+            </div>
+        </div>
         <div id="sidebar">
             <br>
             <img src="./images/avatar_g2.jpg" alt="avatar" class="profile-picture">
@@ -40,6 +50,9 @@
                 <i class="fa-brands fa-twitter icons"></i>
                 <i class="fa-brands fa-linkedin icons"></i>
             </div>
+            <a class="close-btn">
+                <i class="fa fa-remove"></i>
+            </a>
         </div>
         <div id="page-content">
             <div class="content-section">
@@ -54,11 +67,11 @@
                         <i class="fa-regular fa-gem"></i>
                         Design
                     </button>
-                    <button class="filter-button">
+                    <button class="filter-button mobile-hide">
                         <i class="fa-regular fa-image"></i>
                         Photos
                     </button>
-                    <button class="filter-button">
+                    <button class="filter-button mobile-hide">
                         <i class="fa-solid fa-map-pin"></i>
                         Art
                     </button>
@@ -154,10 +167,12 @@
             </div>
             <div class="images-of-me">
                 <div class="image-look">
-                    <img src="./images/me2.jpg" alt="avatar" class="image-me">
+                    <img src="./images/avatar_g (2).jpg" alt="avatar" class="image-me">
+
                 </div>
                 <div class="image-look">
-                    <img src="./images/avatar_g (2).jpg" alt="avatar" class="image-me">
+                    <img src="./images/me2.jpg" alt="avatar" class="image-me">
+
                 </div>
             </div>
             <div class="content-about">
@@ -301,29 +316,29 @@
             <div class="footer-section">
                 <div class="section-box footer-text">
                     <h3 class="footer-title">FOOTER</h3>
-                    <p class="text-description">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
-                        condimentum,
-                        porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.
+                    <p class="text-description">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+                        porta lectus vitae, ultricies congue gravida diam non fringilla.
                     </p>
                     <p class="text-author">Powered by Nam Coder</p>
                 </div>
                 <div class="section-box blog-post">
                     <h3 class="footer-title">BLOG POSTS</h3>
                     <ul class="post">
-                        <li>
+                        <li class="border-bottom ">
                             <img src="./images/workshop (3).jpg" alt="" class="post-image">
-                            <p>Lorem</p>
-                            <br>
-                            <p>Sed mattis nunc
+                            <p> <span>Lorem</span>
+                                <br>
+                                <span> Sed mattis nunc</span>
                             </p>
                         </li>
+
                         <li>
                             <img src="./images/gondol (2).jpg" alt="" class="post-image">
-                            <p>Lorem</p>
-                            <br>
-                            <p>Sed mattis nunc
+                            <p> <span>Lorem</span>
+                                <br>
+                                <span> Sed mattis nunc</span>
                             </p>
+
                         </li>
                     </ul>
                 </div>
@@ -346,11 +361,13 @@
                         <span>Games</span>
                     </p>
                 </div>
-
-
             </div>
-
+            <div class="author">
+                <p>Powered by Nam Coder</p>
+            </div>
         </div>
+        <script src="./main.js"></script>
+    </div>
 </body>
 
 </html>
